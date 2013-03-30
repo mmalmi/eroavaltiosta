@@ -17,13 +17,13 @@ function updateNav()
 
     if(width > 767) {
 
-        if(pos > 280) {
+        if(pos > 300) {
             if(width <= 1050)
                 $('nav').css({position: "absolute", top: pos + "px"});
             else
                 $('nav').css({position: "fixed", top: "0px"});
         } else
-            $('nav').css({position: "absolute", top: "280px"});
+            $('nav').css({position: "absolute", top: "300px"});
 
     } else {
         $('nav').css({position: "relative", top: "0px"});
