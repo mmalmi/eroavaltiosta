@@ -5,8 +5,22 @@ body
     font-size: 14px
     text-align: center
 
+a
+    color: #AA547E
+    text-decoration: underline
+    outline: 0
+    &:focus
+        outline: 0
+    &:hover
+        text-decoration: none
+
+img
+    max-width: 100%
+    margin: 13px 0
+
 h1
-    font: 400 87px/84px Abril Fatface
+    font: 400 64px "open sans"
+    text-transform: uppercase
 
 h2
     color: #222
@@ -17,21 +31,32 @@ h3
     font: 300 18px/24px "open sans"
 
 nav
+    z-index: 10
     width: 100%
     font: 400 18px/24px "open sans"
     padding: 15px 0
-    background: #ffffff
+    background: url('../img/separator.png') no-repeat center -60px #ffffff
     a
         text-decoration: none
+        text-transform: uppercase
         display: inline-block
-        width: 260px
-        color: #555555
-        &:hover
+        width: 245px
+        color: #000000
+        &:hover, .active
             color: #999999
 
+.active
+    color: #999999      
+
 header, nav
+    user-select: none
+    -webkit-user-select: none
+    -moz-user-select: none  
+    -ms-user-select: none
     .content
         max-width: 800px
+        text-align: center
+
 
 footer
     padding: 50px 100px
@@ -41,24 +66,80 @@ footer
     font: 600 13px/13px "open sans"
 
 header
-    padding: 125px 0 125px 0
+    padding: 50px 0 75px 0
     h1,h3
         margin: 0
 
 #technology
-    background: #ffffff
+    padding-bottom: 25px
+    background: url('../img/separator.png') no-repeat center bottom
 
 #ideology
-    background: #ffffff
+
+#dove
+    img
+        width: 50px
+        margin: 0
+    
+    /*@media (min-width: 1200px)
+        position: absolute
+        left: 0
+        top: 0
+        opacity: 0.2
+        z-index: 1000
+        img
+            width: auto*/
 
 #description
-    background: #efefff
+    padding: 25px 0
+    background: #99BD5E
+    a
+        text-decoration: none
+    p
+        color: #222
+        font: 400 18px/24px "open sans"
+        &:last-of-type
+            margin-bottom: 0
+    h2
+        margin-top: 0
+
+.some-icons
+    img
+        opacity: 0.75
+        width: 100px
+        margin: 0
+        &:hover
+            opacity: 1
+    //box-shadow: inset 0 50px 50px -50px white
 
 .content
     max-width: 650px
     text-align: left
     margin: 0 auto
-    padding: 10px
+    padding: 0 10px
 
 .text
     margin: 0 0 50px 0
+
+.small-img
+    max-width: 300px
+
+@media (max-width: 767px)
+    h1
+        font-size: 48px
+    header
+        padding: 25px 0 10px 0px
+
+    nav
+        background: #ffffff
+        a
+            display: block
+            padding: 5px 0
+            margin: 0 auto
+            width: 100%
+
+    header, nav
+        text-align: center
+
+    .some-icons
+        text-align: center

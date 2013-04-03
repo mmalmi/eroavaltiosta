@@ -1,5 +1,7 @@
-%header{:id=>"home"}
+%header{:id=>"home", :class=>"navpage"}
     %section{:class=>"content"}
+        %div{:id=>"dove"}
+            %img{:src=>"img/dove-small.png"}
         %h1 Eroa valtiosta
         %h3 Tulevaisuus on valtioton.
 %nav
@@ -10,6 +12,14 @@
 
 %section{:id=>"description"}
     %section{:class=>"content"}
-        %h3 Teknologian kehitys muuttaa yhteiskuntaa poliitikkojen ja virkamiesten mielipiteitä kyselemättä.
+        %h2 Muutos tapahtuu ruohonjuuritasolla
+        %p Teknologian kehitys muuttaa yhteiskuntaa poliitikkojen ja virkamiesten mielipiteitä kyselemättä. Kansalaisyhteiskunnalla on yhä paremmat edellytykset tehdä keskusvalta tarpeettomaksi.
 
-        %h3 Tälle sivulle on koottu maailmaa muuttavia teknologioita, joille yhteistä on keskitetyn vallan heikentäminen ja yksilön vallan edistäminen. Ideologia-osiossa on perustelut sille, miksi tuleva kehitys on hyvä asia. 
+        %p Tälle sivulle on koottu maailmaa muuttavia teknologioita. Niille yhteistä on keskitetyn vallan heikentäminen ja yksilön vallan edistäminen. Ideologia-osiossa perustellaan, miksi tuleva kehitys on toivottava asia.
+
+        <div class="fb-like" data-href="http://eroavaltiosta.fi" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+        %p{:class=>"some-icons"}
+            %a{:href=>"http://facebook.com/eroavaltiosta"}
+                %img{:src=>"img/facebook.png", :alt=>"Facebook-ryhmä"}
+            %a{:href=>"http://twitter.com/eroavaltiosta"}
+                %img{:src=>"img/twitter.png", :alt=>"Twitter"}
