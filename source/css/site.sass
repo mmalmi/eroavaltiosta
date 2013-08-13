@@ -91,8 +91,10 @@ header
             width: auto*/
 
 #description
-    padding: 25px 0
-    background: #99BD5E
+    padding: 35px 0
+    background: #c7dea1
+    border-top: 10px solid #333333
+    border-bottom: 10px solid #333333
     a
         text-decoration: none
     p
@@ -102,6 +104,16 @@ header
             margin-bottom: 0
     h2
         margin-top: 0
+
+    background-image: linear-gradient(bottom, rgb(199,222,161) 50%, rgb(190,222,138) 90%)
+    background-image: -o-linear-gradient(bottom, rgb(199,222,161) 50%, rgb(190,222,138) 90%)
+    background-image: -moz-linear-gradient(bottom, rgb(199,222,161) 50%, rgb(190,222,138) 90%)
+    background-image: -webkit-linear-gradient(bottom, rgb(199,222,161) 50%, rgb(190,222,138) 90%)
+    background-image: -ms-linear-gradient(bottom, rgb(199,222,161) 50%, rgb(190,222,138) 90%)
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.5, rgb(199,222,161)),color-stop(0.9, rgb(190,222,138)))
+
+    .fb-like
+        height: 17px
 
 .some-icons
     img
@@ -123,6 +135,9 @@ header
 
 .small-img
     max-width: 300px
+
+.twitter-share-button.twitter-count-horizontal 
+    vertical-align: text-bottom !important
 
 @media (max-width: 767px)
     h1
