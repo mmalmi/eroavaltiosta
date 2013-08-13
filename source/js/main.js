@@ -34,13 +34,13 @@ function updateNav()
 
     if(width > 767) {
 
-        if(pos > 240) {
+        if(pos > 265) {
             if(width <= 1050)
                 $('nav').css({position: "absolute", top: pos + "px"});
             else
                 $('nav').css({position: "fixed", top: "0px"});
         } else
-            $('nav').css({position: "absolute", top: "240px"});
+            $('nav').css({position: "absolute", top: "265px"});
         if(contentItems)
             handleScrollNavigation();
 
